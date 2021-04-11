@@ -18,3 +18,8 @@ Route::get('/','SessionController@index');
 Route::get('view','SessionController@view');
 Route::get('set','SessionController@set');
 Route::get('delete','SessionController@delete');
+
+Route::get('/login','LoginController@index');
+Route::any('check','LoginController@check');
+Route::any('login_success','LoginController@ura');
+Route::any('logout','LoginController@logout');
